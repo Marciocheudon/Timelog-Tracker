@@ -87,7 +87,7 @@ def ensure_day(data, day_key):
         }
     return data["days"][day_key]
 
-
+  
 class TimeLogTracker:
     def __init__(self, root):
         self.root = root
