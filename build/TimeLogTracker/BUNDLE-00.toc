@@ -1,0 +1,3 @@
+([('TimeLogTracker',
+   '/Users/cheudon/timelog_tracker_bombapatch/dist/TimeLogTracker',
+   'EXECUTABLE')],)

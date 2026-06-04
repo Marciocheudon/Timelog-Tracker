@@ -18,7 +18,10 @@ except Exception:  # pragma: no cover - optional runtime dependency
     ImageGrab = None
 
 
-APP_DIR = Path(__file__).resolve().parent
+if getattr(sys, "frozen", False):
+    APP_DIR = Path(sys.executable).resolve().parent
+else:
+    APP_DIR = Path(__file__).resolve().parent
 DATA_FILE = APP_DIR / "timelog_data.json"
 SCREENSHOT_DIR = APP_DIR / "screenshots"
 
